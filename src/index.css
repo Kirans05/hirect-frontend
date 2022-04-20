@@ -21,6 +21,10 @@ code {
   justify-content: center;
   height: 96vh;
   width: 100%;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/72/NYC_-_New_York_City_Library_-_1723.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .googleLogin{
@@ -33,6 +37,24 @@ code {
 .googleSigninBtn{
   align-items: center;
 }
+
+.navSuggestion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navSuggestion > .mainNavbar {
+  align-self: stretch;
+}
+
+.suggestionBar{
+  background-color: white;
+  width: 340px;
+  z-index: 1;
+  margin-right: 90px;
+}
+
 
 
 /*  dashboard main nav bar */
@@ -131,6 +153,7 @@ border: 2px solid white;
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 15px;
+  margin-top: 10px;
 }
 
 

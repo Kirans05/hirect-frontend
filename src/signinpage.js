@@ -21,8 +21,9 @@ const SignInPage = () => {
       },
     };
     const axiosResult = await axios(option);
+    console.log(axiosResult)
     if(axiosResult.data.message == "SignUp successfull"){
-        localStorage.setItem("SigninTocken",axiosResult.data.SigninTocken)
+        localStorage.setItem("LoginTocken",axiosResult.data.tocken)
         const routeValue = "sigin"
         nav(`/dashboard/${routeValue}`)
     }else if(axiosResult.data.message == "Login Successfull") {
@@ -39,7 +40,7 @@ const SignInPage = () => {
   };
   return (
     <div className="singUpDiv">
-      <h1>Login with google</h1>
+      <h1 style={{color:"white"}}>Login with google</h1>
       <div className="googleLogin">
       <GoogleLogin
         clientId="638173720564-7ql1iidb2p96tqmud5ojjan50c66khg5.apps.googleusercontent.com"
