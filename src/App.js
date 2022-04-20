@@ -26,7 +26,7 @@ const App = () => {
   const keywordSearched = async (words) => {
     // setkeywords([...keywords, words]);
     let options = {
-      url: "http://localhost:8000/searchKeyword",
+      url: "https://hirect-app.herokuapp.com/searchKeyword",
       headers: {
         "content-type": "application/json",
       },
@@ -43,7 +43,7 @@ const App = () => {
 
   const displaySearchKey = async () => {
     let options ={
-      url:"http://localhost:8000/displaySearch",
+      url:"https://hirect-app.herokuapp.com/displaySearch",
       headers:{
         "content-type":"application/json"
       },
