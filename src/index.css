@@ -11,3 +11,156 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/*  signup form css */
+.singUpDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 96vh;
+  width: 100%;
+}
+
+.googleLogin{
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  border: 2px solid black;
+  
+}
+.googleSigninBtn{
+  align-items: center;
+}
+
+
+/*  dashboard main nav bar */
+.mainNavbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(84, 79, 245);
+  height: 75px;
+  box-shadow: 5px 1px 10px 5px grey;
+}
+.mainNavbar > img {
+  width: 115px;
+  height: 75px;
+}
+.mainNavbar > .middleMainnavbar {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+border: 2px solid white;
+  border-radius: 30px;
+  padding: 15px;
+  background-color: white;
+}
+.middleMainnavbar > input {
+  margin-right: 20px;
+  width: 370px;
+  height: 35px;
+  border: none;
+  outline: none;
+}
+.middleMainnavbar >  .searchIcon {
+  width: 40px;
+}
+.Logoutbtn1 > Button {
+  margin-right: 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+
+.Logoutbtn1 > Button:hover{
+  background-color: red;
+  text-decoration: none;
+  color: white;
+}
+
+
+.mainFooter{
+  /* margin-top: 585px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+
+
+ /* individual books */
+ .bookCardBody{
+   display: flex;
+   flex-direction: column; 
+   align-items: flex-start;
+   justify-content: center;
+   margin: 15px;
+   width: 300px;
+   box-shadow: 0px 1px 11px 2px grey;
+   padding: 20px;
+}
+.bookCardBody > img {
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 250px;
+}
+.bookCardBodyInfo > .h3tag{
+  margin: 5px 0 5px 0;
+}
+.bookCardBodyInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+}
+.bookCardBodyInfo > Button {
+  background-color: red;
+  /* margin-top: 5px 0 0 0; */
+}
+.totalBookDisplay{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 15px;
+}
+
+
+/* book details page */
+.divBookBody{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.divBookDeatils > img {
+  margin-right: 30px;
+  min-width: 400px;
+}
+
+.divBookDeatils{
+  display: flex;
+  flex-direction: row;
+}
+
+.divBookDetailsSide{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.divBookDetailsSide > Button {
+  align-self: flex-start;
+}
+.coverImages{
+  max-width: 300px;
+}
+
